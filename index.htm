@@ -3,17 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeus</title>
+    <title>Portfolio | John Doe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>
-        Build a virtual world.
-    </h1>
-    <h1>
-        Let's Start
-    </h1>
- 
-    <button class="home-btn">Get Started</button>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">JD</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">John Doe</span></h1>
+            <h2>Full Stack Developer</h2>
+            <p>Creating elegant solutions for complex problems</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate developer with expertise in building modern web applications. With 5 years of experience, I specialize in creating responsive and user-friendly interfaces.</p>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="/api/placeholder/400/400" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="/api/placeholder/350/200" alt="Project 1">
+                <h3>E-commerce Platform</h3>
+                <p>A full-stack e-commerce solution with React and Node.js</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/api/placeholder/350/200" alt="Project 2">
+                <h3>Task Management App</h3>
+                <p>A responsive task manager built with React and Firebase</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/api/placeholder/350/200" alt="Project 3">
+                <h3>Weather Dashboard</h3>
+                <p>Real-time weather application using Weather API</p>
+                <div class="project-links">
+                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nabin  All rights reserved.</p>
+    </footer>
 </body>
 </html>
